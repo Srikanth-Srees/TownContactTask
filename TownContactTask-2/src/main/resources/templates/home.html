@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" th:href="@{/style.css}">
+	<title>Student Form</title>
+</head>
+<body>
+	<div class="out">
+		<div>
+			<form th:action="@{/save}">
+			<label for="email">Name</label>
+			<input type="text" name="name"><br><br>
+			<label for="email">Email</label>
+			<input type="email" name="email"><br><br>
+			<label for="maths">maths</label>
+			<input type="number" name="maths"><br><br>
+			<label for="english">English</label>
+			<input type="number" name="english"><br><br>
+			<input type="submit">
+			</form>
+		</div>
+	
+	</div>
+	

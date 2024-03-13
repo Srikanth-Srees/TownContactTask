@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org" 
+>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" th:href="@{/style.css}">
+	<title></title>
+</head>
+<body>
+
+
+
+<div class="out">
+<table class="tab" >
+  <thead>
+ 	<tr>
+    	  <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Author</th>
+      <th scope="col">Price</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody th:each="e:${list}">
+    <tr >
+	  <td th:text="${e.getId()}"></td>
+      <td th:text="${e.getName()}"></td>
+      <td th:text="${e.getEmail()}"></td>
+      <td th:text="${e.getMaths()}"></td>
+      <td th:text="${e.getEnglish()}"></td>
+     </tr>
+  </tbody>
+</table>
+</div>
+
+</section>
+	
+</body>
+</html>

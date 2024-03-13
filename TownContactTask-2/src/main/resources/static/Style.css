@@ -1,0 +1,9 @@
+.out{
+	padding:10px;
+	text-align:center
+}
+table, th, td {
+	text-align:center
+  border: 2px solid black;
+  border-collapse: collapse;
+}
